@@ -136,7 +136,7 @@ span {
     margin-top: 30px;
 }
 .achivements{
-    border: 1px solid blue;
+    border: 2px solid darkblue;
     border-radius: 4px;
    text-align: center;
     padding: 25px;
@@ -148,19 +148,59 @@ span {
 .achivements img {
     margin-top: 15px;
 }
+/* sponsor section */
+.sponsor-section{
+    display: flex;
+    justify-content: center;
+}
+.sponsor-description{
+    text-align: center;
+    width: 50%;
+
+}
+.sponsor-logos{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    
+}
+
+.sponsor-logos img{
+    width: 50%;
+    filter: grayscale(100%);
+}
+/* footer section */
+footer{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.footer-section{
+    width: 1000px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.2) ;
+}
 /* responsive design for mobile */
 
 @media screen and (max-width:576px) {
+    /* similar styes with flex */
+    nav,
+    .team-container, .achivement-section {
+        flex-direction: column;
+    }
     header {
         background-color: cornflowerblue;
         padding: 0;
         margin: 0;
     }
 
-    nav,
-    .team-container {
-        flex-direction: column;
-    }
+  
 
     .logo {
         font-weight: 800;
@@ -201,7 +241,36 @@ span {
     .facts-section{
         width: 100%;
     }
+
+    /* achivement sections */
+    .achivement-section{
+        gap: 15px;
+    }
+    /* sponsor section  */
+  
+    .sponsor-description{
+        text-align: center;
+        width: 100%;
     
+    }
+    /* sponsor logos section */
+    .sponsor-logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 80px;
+  
+    }
+    .sponsor-logos img{
+        padding-top: 10px;
+        padding-left:10px;
+    }
+    /* footer section */
+    .footer-section{
+        margin: 0;
+        width: 100%;
+    }
 
 }
 
@@ -253,4 +322,20 @@ span {
       .facts-section{
         width: 100%;
     }
+        /* sponsor section  */
+  
+        .sponsor-description{
+            text-align: center;
+            width: 100%;
+        
+        }
+        /* footer section */
+        footer{
+            padding:10px 40px;
+            
+        }
+        .footer-section{
+            /* margin: 0 auto; */
+            width: 100%;
+        }
 }
