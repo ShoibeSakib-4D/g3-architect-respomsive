@@ -123,7 +123,51 @@ span {
     font-size: 2rem;
 
 }
+/* css for features setion */
+.features{
+display: flex;
+padding-top: 20px;
+gap: 20px;
 
+}
+
+.card h5,p{
+    padding: 0;
+    margin: 0;
+}
+.card{
+    margin-top: 20px;
+    padding: 10px;
+    
+background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+border-radius: 8px;
+
+
+}
+.feature-img img{
+    width: 600px;
+    height:90%;
+    margin-left: 50px;
+}
+.features-des-and-card h1{
+    border-left: 5px solid darkblue;
+    padding-left: 8px;
+}
+
+.experience-badge{
+    background-color: darkblue;
+    color: white;
+    width: 200px;
+    border-radius: 5px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 130px;
+}
+.experience-badge h1{
+    margin: 0;
+}
 /* css for some facts section */
 .facts-section{
     width: 50%;
@@ -191,7 +235,7 @@ footer{
 @media screen and (max-width:576px) {
     /* similar styes with flex */
     nav,
-    .team-container, .achivement-section {
+    .team-container, .achivement-section,.features {
         flex-direction: column;
     }
     header {
@@ -271,6 +315,12 @@ footer{
         margin: 0;
         width: 100%;
     }
+    /* features section */
+    .feature-img img{
+        width:83%;
+        height:90%;
+      
+    }
 
 }
 
@@ -306,7 +356,7 @@ footer{
     }
 
     /* style for main section */
-    .team-container {
+    .team-container, .features {
         flex-direction: column;
     }
 
@@ -338,4 +388,8 @@ footer{
             /* margin: 0 auto; */
             width: 100%;
         }
+  /* features sectiion */
+  .feature-img{
+    margin:0 auto;
+  }
 }
